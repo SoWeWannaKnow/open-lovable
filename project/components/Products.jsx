@@ -88,7 +88,7 @@ const Products = () => {
           <p className="text-xl mb-4">
             以 iPhone 12 或後續機型升級換購，
             <br />
-            獲享 NT\$4,500 至 NT\$24,000 折抵優惠1。
+            獲享 NT\$2,500 至 NT\$34,000 折抵優惠1。
           </p>
           <a 
             href="https://www.apple.com/tw/shop/goto/trade_in"
