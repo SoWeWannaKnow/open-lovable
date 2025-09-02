@@ -3,52 +3,46 @@ import React from 'react';
 const Products = () => {
   const products = [
     {
-      title: "iPhone",
-      subtitle: "來看看 iPhone 17 全系列。",
+      title: "Open Lovable 網站建置",
+      subtitle: "【Vibe Coding】精美網站製作教學｜不用美感、不用天份、只需要複製現成網站｜Open Lovable 網站建置 + 部署｜所以想知道",
       bgColor: "bg-gradient-to-br from-gray-900 via-black to-gray-800",
       textColor: "text-white",
-      link: "https://www.apple.com/tw/iphone/",
-      shopLink: "https://www.apple.com/tw/shop/goto/buy_iphone"
+      link: "https://youtube.com/video/0VOcOcTg_VY"
     },
     {
-      title: "MacBook Air",
-      subtitle: "全新天藍色，M4 效能沖天。",
+      title: "Vibe Coding 部署",
+      subtitle: "【Vibe Coding】網站建置 + 部署｜最簡單、最好懂、新手也能快速上手｜所以想知道",
       bgColor: "bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600",
       textColor: "text-white",
-      link: "https://www.apple.com/tw/macbook-air/",
-      shopLink: "https://www.apple.com/tw/shop/goto/buy_mac/macbook_air"
+      link: "https://youtube.com/video/yGR8y-ItJsw"
     },
     {
-      title: "Apple Watch Series 10",
-      subtitle: "纖薄表率。",
+      title: "Mermaid 語法",
+      subtitle: "【技術概念】AI 應用效率倍增 | 讓 AI 秒懂你的邏輯 | 最簡單的 Mermaid 語法｜所以想知道",
       bgColor: "bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600",
       textColor: "text-white",
-      link: "https://www.apple.com/tw/apple-watch-series-10/",
-      shopLink: "https://www.apple.com/tw/shop/goto/buy_watch/apple_watch_series_10"
+      link: "https://youtube.com/video/MFr4CMCKJWw"
     },
     {
-      title: "iPad Pro",
-      subtitle: "出奇纖薄，出眾強大。",
+      title: "當外包成為常態",
+      subtitle: "【產業話題】不再招募正職人力？自由工作者的時代來臨了？｜外包、接案成為常態｜所以想知道",
       bgColor: "bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900",
       textColor: "text-white",
-      link: "https://www.apple.com/tw/ipad-pro/",
-      shopLink: "https://www.apple.com/tw/shop/goto/ipad_pro/select"
+      link: "https://youtube.com/video/QsIoWzHvf6c",
     },
     {
-      title: "iPad Air",
-      subtitle: "現在超強驅動來自 M3 晶片。",
+      title: "OAuth 授權",
+      subtitle: "【技術概念】自動化流程｜完整帶你走完 OAuth 授權環節｜所以想知道",
       bgColor: "bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600",
       textColor: "text-white",
-      link: "https://www.apple.com/tw/ipad-air/",
-      shopLink: "https://www.apple.com/tw/shop/goto/buy_ipad/ipad_air"
+      link: "https://youtube.com/video/UAt-rSvcla0"
     },
     {
-      title: "AirPods Pro 2",
-      subtitle: "聲聲，震撼耳際。",
+      title: "面試官在想什麼？",
+      subtitle: "【面試必看】面試官在想什麼？｜全部答對反而不會上？ ｜所以想知道",
       bgColor: "bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300",
       textColor: "text-gray-900",
-      link: "https://www.apple.com/tw/airpods-pro/",
-      shopLink: "https://www.apple.com/tw/shop/goto/buy_airpods/airpods_pro_2"
+      link: "https://youtube.com/video/QpiLKyaTEzI",
     }
   ];
 
@@ -68,13 +62,7 @@ const Products = () => {
                   href={product.link}
                   className="inline-block px-6 py-3 bg-white bg-opacity-20 backdrop-blur-sm rounded-full hover:bg-opacity-30 transition-all duration-300"
                 >
-                  進一步了解
-                </a>
-                <a 
-                  href={product.shopLink}
-                  className="inline-block px-6 py-3 rounded-full border border-current hover:bg-white hover:bg-opacity-10 transition-all duration-300"
-                >
-                  購買
+                  觀看教學
                 </a>
               </div>
             </div>
@@ -83,18 +71,13 @@ const Products = () => {
 
         <div className="mt-16 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 rounded-3xl p-12 text-center text-white shadow-2xl">
           <h3 className="text-3xl font-bold mb-4">
-            Apple Trade In 換購方案
+            加入成爲頻道會員
           </h3>
-          <p className="text-xl mb-4">
-            以 iPhone 12 或後續機型升級換購，
-            <br />
-            獲享 NT\$2,500 至 NT\$34,000 折抵優惠1。
-          </p>
           <a 
-            href="https://www.apple.com/tw/shop/goto/trade_in"
+            href="https://www.youtube.com/@SoWeWannaKnow"
             className="inline-block px-6 py-3 bg-white bg-opacity-20 backdrop-blur-sm rounded-full hover:bg-opacity-30 transition-all duration-300"
           >
-            查看你裝置的估價 →
+            開始學習 →
           </a>
         </div>
       </div>

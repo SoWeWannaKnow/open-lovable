@@ -2,20 +2,16 @@ import React from 'react';
 
 const Footer = () => {
   const links = [
-    { title: "商店", items: ["商店首頁", "Mac", "iPad", "iPhone", "Watch", "AirPods", "TV與電影", "配件"] },
-    { title: "Apple 錢包", items: ["錢包", "Apple Card", "Apple Pay"] },
-    { title: "帳號", items: ["管理你的 Apple ID", "Apple Store 帳號", "iCloud.com"] },
-    { title: "Apple Store", items: ["尋找零售店", "Genius Bar", "Today at Apple", "Apple 夏令營", "Apple Trade In 換購方案", "訂單狀態", "購物協助"] },
-    { title: "商務應用", items: ["Apple 與商務", "商務選購"] },
-    { title: "教育", items: ["Apple 與教育", "高校生選購優惠", "大專生選購優惠"] },
-    { title: "Apple 的價值", items: ["輔助使用", "教育", "環境", "包容性與多元性", "隱私權", "供應商責任"] },
-    { title: "關於 Apple", items: ["Newsroom", "Apple 領導團隊", "工作機會", "投資者", "Apple 維修", "活動", "聯絡 Apple"] }
+    { title: "頻道精選", items: ["網站建置教學", "AI 工具應用", "Mermaid 語法入門", "產業趨勢解析", "面試技巧分享"] },
+    { title: "學習資源", items: ["Vibe Coding 系列", "Open Lovable 專案", "技術概念解說", "外包與自由工作者"] },
+    { title: "社群互動", items: ["YouTube 頻道", "加入會員", "留言討論", "追蹤最新動態"] },
+    { title: "關於我們", items: ["頻道介紹", "聯絡方式", "合作提案", "常見問題"] }
   ];
 
   return (
     <footer className="bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {links.map((category, index) => (
             <div key={index}>
               <h3 className="text-xs font-semibold text-gray-900 mb-3 uppercase tracking-wide">
@@ -24,12 +20,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 {category.items.map((item, itemIndex) => (
                   <li key={itemIndex}>
-                    <a 
-                      href="#" 
-                      className="text-xs text-gray-600 hover:text-gray-900 transition-colors"
-                    >
-                      {item}
-                    </a>
+                    <span className="text-xs text-gray-600">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -39,16 +30,17 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-300">
           <p className="text-xs text-gray-600 mb-4">
-            更多選購方式：尋找你附近的 <a href="#" className="text-blue-600 hover:underline">Apple Store</a> 或 <a href="#" className="text-blue-600 hover:underline">其他零售商</a>。致電 0800-020-021 或 <a href="#" className="text-blue-600 hover:underline">尋找經銷商</a>。
+            這裡是 <span className="font-semibold text-blue-600">所以想知道</span> 頻道，幫助你快速上手網頁開發、AI 工具應用與產業趨勢。<br />
+            歡迎加入會員、訂閱頻道，與我們一起學習、交流、成長！
           </p>
 
           <div className="text-xs text-gray-600">
-            <p>Copyright © 2024 Apple Inc. 保留所有權利。</p>
+            <p>Copyright © 2024 所以想知道 SoWeWannaKnow. 保留所有權利。</p>
             <div className="mt-2 space-x-4">
+              <a href="https://www.youtube.com/@SoWeWannaKnow" className="text-blue-600 hover:underline">YouTube 頻道</a>
               <a href="#" className="text-blue-600 hover:underline">隱私權政策</a>
               <a href="#" className="text-blue-600 hover:underline">使用條款</a>
-              <a href="#" className="text-blue-600 hover:underline">銷售政策</a>
-              <a href="#" className="text-blue-600 hover:underline">網站地圖</a>
+              <a href="#" className="text-blue-600 hover:underline">聯絡我們</a>
             </div>
           </div>
         </div>
